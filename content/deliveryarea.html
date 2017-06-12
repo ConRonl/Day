@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../css/base.css"/>
+    <link rel="stylesheet" href="../css/area.css"/>
+    <link rel="stylesheet" href="../css/ui-dialog.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/dialog-min.js"></script>
+    <title>服务范围</title>
+</head>
+<body>
+<header class="clearfloat bgfcc700">
+    <div class="conWidth hg80 bgfcc700">
+        <div class="logo fl pt15"><a href="../index.html"><img src="../img/logo.png"></a></div>
+        <div class="iphone fr pr7 clfff lh50 posrel">
+            <p class="lh50 iphone-updown" id="iphone-updown"><img src="../img/cd.png"></p>
+        </div>
+        <nav class="fr">
+            <a href="../index.html">首页</a>
+            <a href="aboutus.html">关于一米鲜</a>
+            <a href="customerservice.html">用户帮助</a>
+            <a href="javascript:;">服务范围</a>
+            <a href="news.html">最新动态</a>
+            <a href="polepsale.html">极售后</a>
+            <a><span id="add_our">联系我们</span></a>
+        </nav>
+    </div>
+</header>
+<div class="service-center">
+    <div class="container">
+        <h1>服务范围</h1>
+        <div class="second-cell clearfloat">
+            <div class="city">北京市</div>
+            <div class="city">天津市</div>
+            <div class="city">上海市</div>
+            <div class="city">深圳市</div>
+            <div class="city">广州市</div>
+            <div class="city">江苏省</div>
+            <div class="city">浙江省</div>
+            <div class="city">安徽省</div>
+        </div>
+    </div>
+</div>
+<div class="footer"><p>Copyright  2015 1mian.com | All Right Reserved.京ICP备14056491号-1</p></div>
+</body>
+<script>
+    var w_width=$(window).width();
+    $(document).ready(function(){
+        //当屏幕大于768的时候 点击联系我们  显示剩余列表
+        if(w_width >= 768){
+            $("#add_our").click(function(){
+                var d = dialog({
+                    content: '<ul>' +
+                    '<li><a href="contactus.html">联系我们</a></li>' +
+                    '<li><a href="recruitment.html">加入我们</a></li>' +
+                    '<li class="modify_pass"><a href="compare_group.html">企业团购</a></li>' +
+                    '</ul>',
+                    quickClose:true
+                });
+                d.show(document.getElementById("add_our"))
+            })
+        }else if(w_width < 768){             //当屏幕小于768的时候 点击图片显示列表
+            $("#iphone-updown").click(function(){
+                var d = dialog({
+                    //要显示的内容
+                    content: '<ul>' +
+                    '<li><a href="../index.html">首页</a></li>' +
+                    '<li><a href="aboutus.html">关于一米鲜</a></li>' +
+                    '<li><a href="customerservice.html">用户帮助</a></li>' +
+                    '<li><a href="javascript:;">服务范围</a></li>' +
+                    '<li><a href="news.html">最新动态</a></li>' +
+                    '<li><a href="polepsale.html">极售后</a></li>' +
+                    '<li><a href="contactus.html">联系我们</a></li>' +
+                    '<li><a href="recruitment.html">加入我们</a></li>' +
+                    '<li><a href="compare_group.html">企业团购</a></li>' +
+                    '</ul>',
+                    quickClose: true
+                });
+                d.show(document.getElementById("iphone-updown"))
+            })
+        }
+    });
+
+</script>
+
+</html>

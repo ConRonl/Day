@@ -1,0 +1,357 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, form {
+  margin: 0;
+  word-break: break-all;
+}
+
+body {
+  font-family: "Microsoft YaHei";
+  font-size: 100%;
+  margin: 0px auto;
+  overflow-x: hidden;
+}
+
+img {
+  border: 0px solid;
+  padding: 0px;
+  margin: 0px;
+}
+
+input, textarea, select {
+  font-size: 100%;
+  font-family: arial;
+  font-family: inherit;
+}
+
+h4, h5, h6 {
+  font-size: 1em;
+}
+
+ul, ol {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+a img {
+  border: 0;
+  text-decoration: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+.clearfloat:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+.malr10{
+  margin: 10% 0;
+}
+.conWidth {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.bgfcc700 {
+  background: #fcc700;
+}
+
+.bg787b70 {
+  background: #787b70;
+}
+
+.bg91ad0d {
+  background: #91ad0d;
+}
+
+.bg769d9c {
+  background: #769d9c;
+}
+
+.bgce8457 {
+  background: #ce8457;
+}
+
+.bga38a83 {
+  background: #a38a83;
+}
+
+.hg87 {
+  height: 87px;
+}
+
+.hg80 {
+  height: 80px;
+}
+
+.posrel {
+  position: relative;
+}
+
+.clfff {
+  color: #fff;
+}
+
+.lh50 {
+  line-height: 50px;
+}
+
+.lh80 {
+  line-height: 80px;
+}
+
+.pl7 {
+  padding-left: 7px;
+}
+
+.pl73 {
+  padding-left: 73px;
+}
+
+.pr7 {
+  padding-right: 7px;
+}
+
+.pr75 {
+  padding-right: 75px;
+}
+
+.pt38 {
+  padding-top: 38px;
+}
+
+.pt50 {
+  padding-top: 50px;
+}
+
+.pt93 {
+  padding-top: 93px;
+}
+
+.pt15 {
+  padding-top: 15px;
+}
+
+.pt178 {
+  padding-top: 178px;
+}
+
+.pt200 {
+  padding-top: 200px;
+}
+
+.pt205 {
+  padding-top: 205px;
+}
+
+.pt208 {
+  padding-top: 208px;
+}
+
+.pt211 {
+  padding-top: 211px;
+}
+
+.pb30 {
+  padding-bottom: 30px;
+}
+
+.pb211 {
+  padding-bottom: 211px;
+}
+
+.mb26 {
+  margin-bottom: 26px;
+}
+
+.mb77 {
+  margin-bottom: 77px;
+}
+
+.mb80 {
+  margin-bottom: 80px;
+}
+
+.mb107 {
+  margin-bottom: 107px;
+}
+
+.tc {
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+dl {
+  margin: 0;
+}
+
+nav {
+  color: #fff;
+  padding-top: 30px;
+}
+
+nav a {
+  padding: 0 45px;
+  font-size: 14px;
+  color: #fff;
+  display: inline-block;
+  line-height: 18px;
+  border-right: 1px solid #fff;
+}
+
+nav a:visited {
+  color: #fff;
+}
+
+nav a:nth-last-child(1) {
+  border: none;
+}
+
+.iphone {
+  display: none;
+}
+
+.pc {
+  display: block;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  background: #f1f1f1;
+  font-size: 12px;
+  text-align: center;
+}
+
+.footer p {
+  padding: 0;
+  line-height: 60px;
+  color: #666;
+}
+
+@media screen and (max-width: 768px) {
+  .conWidth {
+    width: 100%;
+    min-width: 320px;
+  }
+
+  nav {
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    float: none;
+    top: 50px;
+    padding: 10px 0;
+    display: none;
+  }
+
+  nav a {
+    /*border: none;*/
+    border: 1px solid red;
+    width: 45%;
+    text-align: center;
+    padding: 0;
+    line-height: 30px;
+  }
+
+  .iphone {
+    display: block;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .logo {
+    zoom: 0.6;
+    margin-left: 10px;
+  }
+
+  header .conWidth {
+    height: 40px;
+  }
+
+  p.iphone-updown {
+    line-height: 40px;
+    padding: 10px 0 0 0;
+  }
+
+  .footer p {
+    line-height: 30px;
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+@media screen and (min-width: 768px) and(max-width: 1200px){
+  nav a {
+    border: 1px solid red;
+    /*width: 45%;*/
+    /*text-align: center;*/
+    /*padding: 0;*/
+    /*line-height: 30px;*/
+  }
+}
+@media screen and (min-width: 500px) and (max-width:768px) {
+  .footer p {
+    line-height: 60px;
+    width: 100%;
+    margin: 0;
+  }
+}
+.ui-dialog-grid .ui-dialog-body {
+  padding: 10px 20px;
+}
+
+.ui-dialog-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ui-dialog-content ul li {
+  line-height: 35px;
+  text-align: center;
+}
+
+.ui-dialog-content ul a {
+  text-decoration: none;
+  font-family: 'Microsoft YaHei';
+  font-size: 16px;
+  color: #333;
+}
+
+.ui-dialog-content ul a:hover {
+  color: #f00;
+}
+
+#iphone-updown, #add_our {
+  cursor: pointer;
+}
+
+.ui-dialog-body {
+  width: 100px;
+}
+
+/*# sourceMappingURL=base.css.map */

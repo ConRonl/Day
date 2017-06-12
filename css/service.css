@@ -1,0 +1,57 @@
+/*service-center*/
+html{
+    background-color: #f7c700
+}
+.service-center{
+	background-color: #f8f8f8;
+	padding: 50px 0px;
+}
+.service-center-content{
+	max-width: 600px;
+    margin: auto;
+    font-size: 14px;
+    color: #643514;
+}
+h1{
+	color: #80c341;
+	font-size: 30px;
+	padding-bottom: 20px;
+	font-weight: 100;
+    text-align: center;
+}
+h2{
+	color: #80c341;
+	font-size: 20px;
+	padding-bottom: 26px;
+	font-weight: 100;
+    text-align: center;
+}
+h4{
+	text-indent: 2em;
+	font-size: 16px;
+	color: #643514;
+	font-weight: 100;
+	margin-top: -40px;
+	margin-bottom: 40px;
+}
+p{
+	font-size: 14px;
+	line-height: 30px;
+	color: #643514;
+	text-indent: 2em;
+	padding-bottom: 20px;
+}
+@media screen and (max-width: 1000px) {
+    .container{
+        margin: 0px 10px;
+    }
+    .header{
+        zoom: 0.6;
+    }
+    .header-slogan{
+        display: none;
+    }
+    .header-tel-tips{
+        display: none;
+    }
+}

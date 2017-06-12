@@ -1,0 +1,194 @@
+/*area-center*/
+html {
+    background-color: #f8f8f8
+}
+
+.service-center {
+    background-color: #f8f8f8;
+    padding: 50px 0px;
+}
+
+.service-center-content {
+    max-width: 800px;
+    min-height: 400px;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+    color: #643514;
+}
+
+.tab-bar {
+    max-width: 600px;
+    margin: 0px auto 30px auto;
+}
+
+.tab {
+    width: 33%;
+    height: 35px;
+    line-height: 35px;
+    background-color: #e6e6e6;
+    color: #643514;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background-color: #f7c700;
+    color: #fff;
+}
+
+.tab.active {
+    background-color: #f7c700;
+    color: #fff;
+}
+
+.service-center-type {
+    color: #643514;
+}
+
+.title {
+    margin: 10px 0px;
+    font-size: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #80c341;
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+
+h2 {
+    color: #643514;
+    font-size: 20px;
+    padding-bottom: 26px;
+    font-weight: 100;
+}
+
+h3 {
+    color: #643514;
+    font-size: 16px;
+    padding-bottom: 26px;
+    font-weight: 100;
+}
+
+h4 {
+    text-indent: 2em;
+    font-size: 16px;
+    color: #643514;
+    font-weight: 100;
+}
+
+p {
+    font-size: 14px;
+    line-height: 30px;
+    color: #643514;
+    padding-bottom: 40px;
+}
+
+table a {
+    color: #999;
+    text-decoration: underline;
+}
+
+table a:visited {
+    color: #999;
+    text-decoration: underline;
+}
+
+td {
+    width: 20%;
+    color: #999;
+    height: 40px;
+}
+
+table {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        margin: 0px 10px;
+    }
+
+    .header {
+        zoom: 0.6;
+    }
+
+    .header-slogan {
+        display: none;
+    }
+
+    .header-tel-tips {
+        display: none;
+    }
+
+    .footer-area {
+        margin-bottom: -60px;
+    }
+
+    .footer-ul div {
+        text-align: center;
+    }
+
+    .footer-ul {
+        margin: 0px;
+        float: none;
+        display: inline-block;
+        width: 32%;
+    }
+
+    .footer-info {
+        zoom: 0.5;
+        line-height: 50px;
+        background-color: #e6e6e6;
+        color: #999;
+    }
+
+    .location-area {
+        display: none;
+    }
+}
+
+.pickup-table td {
+    width: 250px;
+}
+
+.delivery-table td {
+    width: 250px;
+}
+
+.service-center-content h5:nth-child(1) {
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.service-center-content h5:nth-child(2) {
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.service-center-content h5:nth-child(3) {
+    font-size: 16px;
+    padding: 5px 0 35px 0;
+}
+
+.second-cell {
+    margin: 10px 100px;
+    text-align: center;
+}
+
+.city {
+    margin: 20px;
+    height: 40px;
+    width: 80px;
+    color: #ff5a1e;
+    background-color: #fff;
+    border: 1px solid #ff5a1e;
+    line-height: 40px;
+    text-align: center;
+    float: left;
+}
